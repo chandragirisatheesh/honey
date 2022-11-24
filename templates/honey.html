@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>conditions</title>
+    <style>
+        body{
+            background-color: darkblue;
+        }h1{
+            background-color: rgb(133, 179, 59);
+            color:black;
+        }  
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!--
+    <h1>IF condition</h1>
+    {% if a > b %}
+        <h2>inside the if block</h2>
+        <h2>{{a}}</h2>
+    {% else %}
+        <h2>Iam in else block</h2>
+        <h2>{{b}}</h2>
+    {% endif %}
+       -->
+
+       <h1> if-elif block</h1>
+       {% if a > b and a > c%}
+           <h2>if condition</h2>
+           <h2>{{a}}</h2>
+        {%elif b > c %}
+            <h1>ELIF BLOCK</h1>
+             <h1>{{b}}</h1>
+        {% else %}
+           <h2>inside else</h2>
+           <h2>{{c}}</h2>
+        {% endif %}
+    
+</body>
+</html>
